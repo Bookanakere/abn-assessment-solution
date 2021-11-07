@@ -19,7 +19,7 @@
         <tags></tags>
         <parallel.tests>4</parallel.tests>
         <webdriver.base.url></webdriver.base.url>
-        <platform>local-chrome</platform>
+        <platform></platform>
     </properties>
 
     <repositories>

@@ -1,18 +1,19 @@
 package starter.steps;
 
 
+import io.appium.java_client.AppiumDriver;
 import net.thucydides.core.annotations.Step;
-import starter.pages.HomePage;
+import net.thucydides.core.webdriver.WebDriverFacade;
+
+import static net.thucydides.core.webdriver.ThucydidesWebDriverSupport.getDriver;
+
 
 public class GenericSteps {
 
-    private HomePage homePage;
+    @Step("Opening the app")
+    public void openApp(){
 
+        ((AppiumDriver)((WebDriverFacade) getDriver()).getProxiedDriver()).activateApp("com.abnamro.apps.referenceandroid");
 
-    @Step("Go to homepage of desidutchstore")
-    public void openHomePage(){
-        homePage.open();
-       //use below line only while running on saucelabs
-       //homePage.acceptCookie();
     }
 }
