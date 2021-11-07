@@ -1,21 +1,21 @@
 package starter.steps;
 
 import net.thucydides.core.annotations.Step;
-import starter.pages.TestAndroidPage;
+import starter.pages.HomePage;
 
 import static org.junit.Assert.assertEquals;
 
-public class TestAndroidSteps {
+public class ValidateHomePageSteps {
 
-    private TestAndroidPage testAndroidPage;
+    private HomePage homePage;
 
     @Step("Verify test on home page")
     public void verifyTextOnHomePage(String textOnHomePage){
-        assertEquals(textOnHomePage, testAndroidPage.getTextOnHomePage());
+        assertEquals(textOnHomePage, homePage.getTextOnHomePage());
     }
 
     @Step("Validate title on the homepage screen")
     public void validateHomePageTitle(String homePageTitle){
-        assertEquals(homePageTitle, testAndroidPage.getHomePageTitle());
+        assertEquals(homePageTitle, homePage.getHomePageTitle());
     }
 }

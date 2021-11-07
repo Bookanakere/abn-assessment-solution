@@ -5,15 +5,15 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import net.thucydides.core.annotations.Steps;
 import starter.steps.GenericSteps;
-import starter.steps.TestAndroidSteps;
+import starter.steps.ValidateHomePageSteps;
 
-public class TestAndroidStepDefinitions {
+public class ValidateHomePageStepDefinitions {
 
     @Steps
     GenericSteps genericSteps;
 
     @Steps
-    TestAndroidSteps testAndroidSteps;
+    ValidateHomePageSteps validateHomePageSteps;
 
     @Before
     public void openTheApplication(){
@@ -26,12 +26,12 @@ public class TestAndroidStepDefinitions {
 
     @Then("I should see the message {string}")
     public void iShouldSeeTheMessage(String textOnHomePage) {
-        testAndroidSteps.verifyTextOnHomePage(textOnHomePage);
+        validateHomePageSteps.verifyTextOnHomePage(textOnHomePage);
 
     }
 
     @Then("I should see the title {string}")
     public void iShouldSeeTheTitle(String homePageTitle) {
-        testAndroidSteps.validateHomePageTitle(homePageTitle);
+        validateHomePageSteps.validateHomePageTitle(homePageTitle);
     }
 }
