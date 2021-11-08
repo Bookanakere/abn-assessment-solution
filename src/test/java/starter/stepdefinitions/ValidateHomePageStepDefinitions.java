@@ -32,6 +32,12 @@ public class ValidateHomePageStepDefinitions {
 
     @Then("I should see the title {string}")
     public void iShouldSeeTheTitle(String homePageTitle) {
+
         validateHomePageSteps.validateHomePageTitle(homePageTitle);
+    }
+
+    @Then("I should see the mail icon on the homepage")
+    public void iShouldSeeTheMailIconOnTheHomepage() {
+        validateHomePageSteps.validateMailIconExistsOnHomePage();
     }
 }

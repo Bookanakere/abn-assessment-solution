@@ -12,14 +12,21 @@ public class HomePage extends PageObject {
     @AndroidFindBy(xpath="/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout/android.view.ViewGroup/android.widget.TextView")
     private WebElement homePageTitle;
 
+    @AndroidFindBy(id="com.abnamro.apps.referenceandroid:id/fab")
+    private WebElement mailIcon;
+
     public String getTextOnHomePage(){
         return homePageWelcomeMessage.getText();
     }
 
     public String getHomePageTitle(){
+
         return homePageTitle.getText();
     }
 
+    public boolean checkMailIconExists(){
+        return mailIcon.isDisplayed();
+    }
 
 
 }

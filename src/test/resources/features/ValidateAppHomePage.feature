@@ -8,3 +8,7 @@ Feature: Validate homepage of the app
   Scenario: Validate title on the homepage screen
     Given the app is open on the android device
     Then I should see the title "ReferenceAndroid"
+
+  Scenario: Validate mail icon on the homepage screen
+    Given the app is open on the android device
+    Then I should see the mail icon on the homepage
