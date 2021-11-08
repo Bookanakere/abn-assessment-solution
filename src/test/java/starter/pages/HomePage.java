@@ -15,17 +15,27 @@ public class HomePage extends PageObject {
     @AndroidFindBy(id="com.abnamro.apps.referenceandroid:id/fab")
     private WebElement mailIcon;
 
+    @AndroidFindBy(id="com.abnamro.apps.referenceandroid:id/snackbar_text")
+    private WebElement onClickMessage;
+
     public String getTextOnHomePage(){
         return homePageWelcomeMessage.getText();
     }
 
     public String getHomePageTitle(){
-
         return homePageTitle.getText();
     }
 
     public boolean checkMailIconExists(){
         return mailIcon.isDisplayed();
+    }
+
+    public void clickMailIcon(){
+        mailIcon.click();
+    }
+
+    public String getOnClickMessageText(){
+        return onClickMessage.getText();
     }
 
 

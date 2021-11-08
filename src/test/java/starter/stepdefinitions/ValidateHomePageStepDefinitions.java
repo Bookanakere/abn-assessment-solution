@@ -9,16 +9,10 @@ import starter.steps.ValidateHomePageSteps;
 
 public class ValidateHomePageStepDefinitions {
 
-    @Steps
-    GenericSteps genericSteps;
 
     @Steps
     ValidateHomePageSteps validateHomePageSteps;
 
-    @Before
-    public void openTheApplication(){
-        genericSteps.openApp();
-    }
 
     @Given("the app is open on the android device")
     public void the_app_is_open_on_the_android_device() {
