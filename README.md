@@ -18,12 +18,11 @@ Test scenarios are available as two feature files. The features, step definition
 ### Run the tests locally:
 #### Pre-requisites:
 
-1. Java JDK
+1. Java JDK 11
 2. Maven
 3. Android SDK
-4. Appium Server (_Do not forget to set ANDROID_HOME_)
+4. Appium Server 1.22.0 (_Do not forget to set ANDROID_HOME and JAVA_HOME_)
 5. Android Emulator
-6. IDE (To update properties file)
 
 #### Steps:
 
