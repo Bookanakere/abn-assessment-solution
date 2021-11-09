@@ -72,3 +72,9 @@ Detailed instructions are available [here](https://docs.saucelabs.com/mobile-app
 
             [INFO] SERENITY REPORTS
             [INFO]   - Full Report: file://<Full Path>/abn-assessment-solution/target/site/serenity/index.html
+            
+## Example Test Report
+
+![Screenshot 2021-11-09 at 23 16 20](https://user-images.githubusercontent.com/46897916/140977120-81555b62-3abb-4623-ae28-3dda4aa5645e.png) 
+
+![Screenshot 2021-11-09 at 23 20 37](https://user-images.githubusercontent.com/46897916/140977628-3899b31e-cfeb-4bc7-ada3-6f6642a379d8.png)
