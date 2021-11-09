@@ -67,7 +67,7 @@ Detailed instructions are available [here](https://docs.saucelabs.com/mobile-app
             --form 'payload=@"<path/to/your/file>"' \
             --form 'name="<filename.ext>"'
 5. Run on terminal: mvn clean verify
-6. You can also check that tests are running on your Saucelabs account under Automated Tests section.
+6. (Optional) You can also check that tests are running on your Saucelabs account under Automated Tests section.
 7. Once the test run is completed, you will see a link to the test report.
 
             [INFO] SERENITY REPORTS
